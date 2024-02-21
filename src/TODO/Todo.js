@@ -29,8 +29,8 @@ const Todo = () => {
     console.log(Todo)
 
   return (
-    <div className='full-div' style={{ textAlign: "center" , paddingTop:"50px"}}>
-        <h1 className="main-head" >TODO LIST</h1>
+    <div className='container' style={{ textAlign: "center" , paddingTop:"50px"}}>
+        <h1 className="main-head" style={{color:'white'}} >TODO LIST</h1>
         <div className="add-task">
             <input type="text" value={Todo} onChange={(e)=> setTodo(e.target.value)} className="add-input" style={{width:"250px",background:'rgba(255,255,255,.4)'}}/>
             <button className="ButtonAdd" onClick={addHandle} style={{display:"flex"}}><TbBookDownload /></button>
